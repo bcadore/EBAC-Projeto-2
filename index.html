@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto 2 - EBAC</title>
 
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <img src="./Assets/logo.png" alt="Capelo e diploma">
-            <h1>Calculadora de médias:</h1>
-        </header>
-        <form >
-            <input type="text" placeholder="Nome da atividade" required>
-            <input type="number" placeholder="Nota da atividade" required min="0" max="10">
-            <button type="submit">Adicionar +</button>
-        </form>
-        <table cellspacing=""0>
-            <thead>
-                <tr>
-                    <th>
-                        Nome da atividade
-                    </th>
-                    <th>Nota da atividade</th>
-                    <th>Aprovado?</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Atividade 1</td>
-                    <td>7</td>
-                    <td><img src="./Assets/aprovado.png" alt="Emoji festejando"></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Média final</td>
-                    <td>7</td>
-                    <td><span class="resultado">Resultado</span></td>
-                </tr>
-            </tfoot>
-        </table>
+      <header>
+        <img src="./Assets/logo.png" alt="Capelo e diploma" />
+        <h1>Calculadora de médias:</h1>
+      </header>
+      <form id="form-atividade">
+        <input
+          type="text"
+          id="nome-atividade"
+          placeholder="Nome da atividade"
+          required
+        />
+        <input
+          type="number"
+          id="nota-atividade"
+          placeholder="Nota da atividade"
+          required
+          min="0"
+          max="10"
+        />
+        <button type="submit">Adicionar +</button>
+      </form>
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nome da atividade</th>
+            <th>Nota da atividade</th>
+            <th>Aprovado?</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Média final</td>
+            <td>7</td>
+            <td><span class="resultado">Resultado</span></td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
