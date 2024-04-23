@@ -4,51 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EBAC PJ2 - Cálculadora de médias</title>
-
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <img src="./Assets/logo.png" alt="Capelo e diploma" />
-        <h1>Calculadora de médias:</h1>
+          <img src="./Assets/logo.png" alt="Capelo e diploma" />
+          <h1>Calculadora de médias</h1>
       </header>
-      <form id="form-atividade">
-        <input
-          type="text"
-          id="nome-atividade"
-          placeholder="Nome da atividade"
-          required
-        />
-        <input
-          type="number"
-          id="nota-atividade"
-          placeholder="Nota da atividade"
-          required
-          min="0"
-          max="10"
-        />
-        <button type="submit">Adicionar</button>
-      </form>
-      <table cellspacing="0">
-        <thead>
-          <tr>
-            <th>ATIVIDADE</th>
-            <th>NOTA</th>
-            <th>SITUAÇÃO</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-        <tfoot>
-          <tr>
-            <td>MÉDIA FINAL</td>
-            <td id="media-final-valor">---</td>
-            <td id="media-final-resultado">
-              <span class="resultado">---</span>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
+      <main>
+        <form id="form-atividade">
+          <input
+            type="text"
+            id="nome-atividade"
+            placeholder="Nome da atividade"
+            required
+          />
+          <input
+            type="number"
+            id="nota-atividade"
+            placeholder="Nota"
+            required
+            min="0"
+            max="10"
+          />
+          <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th>ATIVIDADE</th>
+              <th>NOTA</th>
+              <th>SITUAÇÃO</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td>MÉDIA FINAL</td>
+              <td id="media-final-valor">---</td>
+              <td id="media-final-resultado">
+                <span class="resultado">---</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
     </div>
     <script src="./main.js"></script>
   </body>
