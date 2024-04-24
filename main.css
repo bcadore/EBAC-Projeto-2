@@ -2,23 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Permanent Marker", cursive;
+  font-style: normal;
 }
 
 body {
-  background-color: #d6d0f15d;
+  background-color: #fafafa;
   margin-top: 5vh;
 }
 
 .container {
   max-width: 960px;
-  width: 100%;  
+  width: 100%;
   margin: 0 auto;
-  background-color: #dcb1f1;
-  border: 6px solid #753c8d;
+  background-color: #00755e;
+  border: 6px solid #ffa500;
   border-radius: 10px;
 }
-
 
 header {
   display: flex;
@@ -30,11 +30,13 @@ header {
 header img {
   height: 128px;
   padding-right: 10px;
+  transform: rotate(-25deg);
 }
 
 header h1 {
   font-size: 48px;
-  font-weight: bold;
+  font-style: normal;
+  color: #fafafa;
 }
 
 form {
@@ -45,21 +47,20 @@ form {
 }
 
 form input {
-  width: 350px;
-  background-color: #787294;
+  width: 500px;
+  background-color: #fff;
   color: #000;
-
-  border: 1px solid #DCB1F1;
+  border: 2px solid #00755e;
   border-radius: 6px;
-
   font-size: 18px;
   text-align: center;
-
   padding: 8px;
+  transition: border-color 0.3s ease;
+  outline: none;
 }
 
 #nota-atividade {
-  width: 75px;
+  width: 100px;
 }
 
 input::placeholder {
@@ -67,38 +68,34 @@ input::placeholder {
 }
 
 form input:hover {
-  background-color: #706A8A;
-  color: #000;
-  border: 2px solid #000;
+  border-color: #ffa500;
 }
 
-form button { 
-  background-color: #c167e7;
-  color: #000;
-
-  border: 1px solid #DCB1F1;
+form button {
+  background-color: #00755e;
+  color: #fff;
+  border-color: #ffa500;
   border-radius: 6px;
-
   font-size: 24px;
-    font-weight: bold;
-  
+  font-weight: bold;
   padding: 3px 6px;
-
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-form button:hover { 
-  background-color: #a528db;
-  border: 1px solid #000;
-  color: antiquewhite;
+form button:hover {
+  background-color: #ffa500;
+  border-color: #fff;
 }
 
 table {
-  width: 100%;
+  color: #FFF;
+  width: 90%;
+  margin: 0 auto;
 }
 
 table th {
-  border-bottom: 2px solid #000;
+  border-bottom: 5px solid #FFF;
   padding: 16px;
   font-size: 24px;
   font-weight: bold;
@@ -116,15 +113,15 @@ table td img {
 }
 
 .resultado {
-  padding: 8px;
+  padding: 3px;
   font-weight: bold;
   color: #fff;
-  background-color: #000;
+  background-color: #ffa500;
   border-radius: 3px;
 }
 
 .aprovado {
-  background-color: #009432;
+  background-color: #005a1e;
 }
 
 .reprovado {
