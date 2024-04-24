@@ -1,9 +1,9 @@
 <h1 align="center">
-    <a href="https://ebac-projeto-2-seven.vercel.app/" alt="Cálculadora de atividades escolares">🔢 Calculadora de atividades escolares 🧮</a>
+    <a href="https://ebac-projeto-2-seven.vercel.app/" alt="Cálculadora de atividades escolares">🔢 Calculadora de média 🧮</a>
 </h1>
 
 <h3 align="center">
-    <p>Sistema web para cálculo de nota de atividades escolares.</p>
+    <p>Sistema web que realiza o cálculo da média (aritmética simples) de atividades escolares.</p>
 </h3>
 
 <p align="center">
@@ -22,35 +22,18 @@
 </p>
 
 <h4 align="center">
-	🚧 Projeto em desenvolvimento 🚧
+	🚧 Projeto não finalizado 🚧
 </h4>
-
-# 📋 ÍNDICE
-
-<!--ts-->
-
-- [Sobre](#-sobre-o-projeto)
-- [Estrutura do projeto](#-estrutura-do-projeto)
-- [Funcionalidades](#-funcionalidades)
-- [Tecnologias](#tecnologias)
-  - [Linguagens](#linguagens)
-  - [Ferramentas](#ferramentas)
-  - [IDE](#-ide)
-- [Visualizando o projeto](#-visualizando-o-projeto)
-- [Hospedagem](#-hospedagem)
-- [Autor](#-autor)
-- [Licença](#-licença)
-- [Outras considerações](#-outras-considerações)
-
-<!--te-->
 
 ## 💻 Sobre o projeto
 
-- Trata-se de um **sistema acadêmico**, onde o usuário deverá informar um valor para a média final de aprovação.
+- Trata-se de um **sistema web**, onde será realizado o cálculo da média aritmética simples dos valores obtidos das atividades (provas ou trabalhos, por exemplo), informadas pelo usuário.
 
-- Além do valor da média final, o usuário deverá informar o **nome** e a **nota** das atividades escolares (provas ou trabalhos, por exemplo) e o sistema irá realizar o cálculo da média e informará se o usuário foi aprovado/reprovado.
+- O sistema levará um valor informado pelo usuário, como valor mínimo para "aprovação".
 
-- O sistema acadêmico **levará em consideração** o valor da média final estipulado pelo usuário para dizer se ele foi aprovado ou não.
+- Se o valor da média final, calculado pelo sistema, for menor que o valor informado pelo usuário, será exibido o resultado como **"reprovado"**.
+
+- Se o valor da média final, calculado pelo sistema, for maior ou igual ao que o valor informado pelo usuário, será exibido o resultado como **"aprovado"**.
 
 - A média do usuário é calculado através da fórmula da média aritméitica, ou seja:
 
@@ -62,10 +45,9 @@ onde:
 Xn = Soma total dos valores
 n = Número total dos valores do conjunto
 ```
+<br>O objetivo principal do projeto foi colocar em prática o aprendizado obtido no curso **"Engenheiro Front-End"** da **EBAC** e usar a linguagem JavaScript para a interação do usuário com a página web.
 
-O objetivo principal do projeto foi colocar em prática o aprendizado obtido no curso **"Engenheiro Front-End"** da **EBAC** e usar a linguagem JavaScript para a interação do usuário com a página web.
-
-Foi utilizado o Git/GitHub como a ferramenta de versionamento e também foi utilizado a plataforma da Vercel para hospedar a página web.
+<br>Foi utilizado o Git/GitHub como a ferramenta de versionamento e também foi utilizado a plataforma da Vercel para hospedar a página web.
 
 ## ⚙️ Estrutura do projeto
 
@@ -79,40 +61,55 @@ Foi utilizado o Git/GitHub como a ferramenta de versionamento e também foi util
 
 As funcionalidades desenvolvidas no projeto são:
 
-- [x] Adicionar
+### Desenvolvidas:
+- [x] **Interface de Adição de Atividades:** Os usuários podem inserir o nome e a nota de uma atividade em um formulário claro e organizado na página.
 
-- [x] Adicionar
+- [x] **Validação de Entradas:** O sistema valida as entradas do usuário, garantindo que a nota inserida esteja dentro do intervalo válido (0 a 10).
 
-- [x] Adicionar
+- [x] **Adição de Atividades:** Após preencher o formulário e clicar em "Adicionar", as atividades são adicionadas à tabela de forma ordenada e com indicação visual de aprovação ou reprovação.
 
-- [x] Adicionar
+- [x] **Feedback Visual:** O sistema fornece feedback visual imediato ao usuário, exibindo emojis de "aprovado" ou "reprovado" na tabela de acordo com a nota inserida.
 
-- [x] Adicionar
+- [x] **Cálculo da Média Final:** A média final é calculada automaticamente com base nas notas das atividades adicionadas, sendo exibida na tabela junto com um feedback visual indicando se o usuário foi aprovado ou reprovado.
+
+- [x] **Estilização Atraente:** A página possui uma estilização atraente, com uso de cores, fontes e layout que tornam a experiência do usuário mais agradável e facilitam a compreensão das informações apresentadas.
+
+- [x] **Performance:** O projeto é otimizado para garantir um carregamento rápido e uma execução suave, proporcionando uma experiência fluida ao usuário durante a interação com a calculadora de médias.
+
+- [x] **Código Organizado:** O código HTML, CSS e JavaScript está bem organizado e comentado, facilitando a manutenção e o entendimento por parte de outros desenvolvedores que possam trabalhar no projeto no futuro.
+
+### Não realizadas:
+- [ ] **Responsividade:** O layout da página é responsivo, adaptando-se a diferentes tamanhos de tela, garantindo uma boa experiência de uso tanto em dispositivos móveis quanto em desktops.
+
+- [ ] **Edição e Remoção de Atividades:** Permitir que o usuário edite ou remova atividades já adicionadas, proporcionando mais flexibilidade e controle sobre os dados inseridos.
+
+- [ ] **Feedback Detalhado:** Além do feedback visual de aprovação ou reprovação, fornecer um feedback mais detalhado sobre o desempenho do usuário, como uma mensagem indicando a diferença entre a média final e a nota mínima para aprovação.
+
+- [ ] **Salvar e Carregar Dados:** Adicionar a capacidade de salvar os dados das atividades inseridas localmente (por exemplo, usando localStorage) para que o usuário possa retornar à página e continuar de onde parou em uma sessão anterior.
+
+- [ ] **Personalização da Nota Mínima:** Permitir que o usuário defina e ajuste a nota mínima de aprovação de acordo com suas necessidades, em vez de solicitar a nota mínima via prompt.
+
+- [ ] **Exportar Resultados:** Adicionar a funcionalidade de exportar os resultados da calculadora, seja para um formato de arquivo (como CSV ou PDF) ou compartilhamento direto por e-mail ou redes sociais.
 
 ## 🛠 Tecnologias
 
 Foi utilizado na construção do projeto as seguintes tecnologias:
 
-#### Linguagens:
+## 🛠 Tecnologias
 
-- **[HTML](https://html.spec.whatwg.org/)**
-- **[CSS](https://www.w3.org/TR/css3-roadmap/)**
-- **[JavaScript](https://www.javascript.com/)**
+Foi utilizado na construção do projeto as seguintes tecnologias:
 
-#### Ferramentas:
-
-- **[Git](https://git-scm.com/)**
-- **[GitHub](https://github.com/)**
-
-#### IDE:
-
-- **[VSCode](https://code.visualstudio.com/)**
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title = "HTML5"/></code> **HTML**
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title = "CSS3"/></code> **CSS**
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title = "JAVASCRIPT"/></code> **JavaScript**
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title = "GIT"/></code> **Git**
+<code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title = "GITHUB"/></code> **GitHub**
 
 ## 👀 Visualizando o projeto
 
 Abaixo é possível visualizar a página web que foi desenvolvida:
 
-![Página principal](./assets/TelaPrincipal.png)
+![Página principal](./Assets/Exemplo.png)
 
 ## 🌐 Hospedagem
 
